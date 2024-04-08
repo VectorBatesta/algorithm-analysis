@@ -3,32 +3,29 @@ import time
 
 def ordena(vetor, tam, escolhateste):
     match escolhateste:
-        case 0:
+        case 0: #Melhor caso: vetor já ordenado em ordem crescente;
             print(f'Melhor caso: ')
-        case 1:
+            vetor = [i for i in range(tam)]
+        case 1: #Caso médio: vetor aleatório;
             print(f'Caso médio: ')
-        case 2:
+            vetor = np.random.randint(0, tam, tam)
+        case 2: #Pior caso: vetor já ordenado em ordem decrescente;
             print(f'Pior caso: ')
+            vetor = [i for i in reversed(range(tam))]
 
     for iteracao in range(10):
-        match escolhateste:
-            case 0: #Melhor caso: vetor já ordenado em ordem crescente;
-                vetor = [i for i in range(tam)]
-            case 1: #Caso médio: vetor aleatório;
-                vetor = np.random.randint(0, tam, tam)
-            case 2: #Pior caso: vetor já ordenado em ordem decrescente;
-                vetor = [i for i in reversed(range(tam))]
+        vetor_temp = vetor.copy()
 
         begin = time.time()
         ####
         for j in range(2, tam):
-            chave = vetor[j]
+            chave = vetor_temp[j]
 
             i = j - 1
-            while i >= 1 and vetor[i] > chave:
-                vetor[i+1] = vetor[i]
+            while i >= 1 and vetor_temp[i] > chave:
+                vetor_temp[i+1] = vetor_temp[i]
                 i = i - 1
-            vetor[i+1] = chave
+            vetor_temp[i+1] = chave
         ####
         end = time.time()
         temposGastos[iteracao] = end - begin
