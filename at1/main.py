@@ -18,11 +18,11 @@ def ordena(vetor, tam, escolhateste):
 
         begin = time.time()
         ####
-        for j in range(2, tam):
+        for j in range(1, tam):
             chave = vetor_temp[j]
 
             i = j - 1
-            while i >= 1 and vetor_temp[i] > chave:
+            while i >= 0 and vetor_temp[i] > chave:
                 vetor_temp[i+1] = vetor_temp[i]
                 i = i - 1
             vetor_temp[i+1] = chave
