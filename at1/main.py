@@ -1,4 +1,3 @@
-import numpy as np # type: ignore
 import time
 
 def ordena(vetor, tam, escolhateste):
@@ -8,7 +7,11 @@ def ordena(vetor, tam, escolhateste):
             vetor = [i for i in range(tam)]
         case 1: #Caso médio: vetor aleatório;
             print(f'Caso médio: ')
-            vetor = np.random.randint(0, tam, tam)
+            for m in range(tam):
+                if m < tam/2:
+                    vetor[m] = tam/2 - m
+                else:
+                    vetor[m] = m
         case 2: #Pior caso: vetor já ordenado em ordem decrescente;
             print(f'Pior caso: ')
             vetor = [i for i in reversed(range(tam))]
@@ -32,7 +35,8 @@ def ordena(vetor, tam, escolhateste):
         print(f' iteração {iteracao} terminada, gasto: {temposGastos[iteracao]:.5f} segundos;')
 
     print(f'  gastou-se {sum(temposGastos):.5f} segundos no total;')
-    print(f'  gastou-se {np.mean(temposGastos):.5f} segundos em média;')
+    mediaTemposGastos = sum(temposGastos) / 10
+    print(f'  gastou-se {mediaTemposGastos:.5f} segundos em média;')
     return
 
 
