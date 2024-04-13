@@ -1,16 +1,20 @@
 import numpy as np # type: ignore
 import time
 
+def printadorArquivasso(texto):
+    with open("out.txt", "a") as arq:
+        arq.write(texto)
+
 def ordena(vetor, tam, escolhateste):
     match escolhateste:
         case 0: #Melhor caso: vetor já ordenado em ordem crescente;
-            arq.write(f'\nMelhor caso: ')
+            printadorArquivasso(f'\nMelhor caso: ')
             vetor = [i for i in range(tam)]
         case 1: #Caso médio: vetor aleatório;
-            arq.write(f'\nCaso médio: ')
+            printadorArquivasso(f'\nCaso médio: ')
             vetor = np.random.randint(0, tam, tam)
         case 2: #Pior caso: vetor já ordenado em ordem decrescente;
-            arq.write(f'\nPior caso: ')
+            printadorArquivasso(f'\nPior caso: ')
             vetor = [i for i in reversed(range(tam))]
 
     for iteracao in range(10):
@@ -29,38 +33,37 @@ def ordena(vetor, tam, escolhateste):
         ####
         end = time.time()
         temposGastos[iteracao] = end - begin
-        arq.write(f'\n iteração {iteracao} terminada, gasto: {temposGastos[iteracao]:.5f} segundos;')
+        printadorArquivasso(f'\n iteração {iteracao} terminada, gasto: {temposGastos[iteracao]:.5f} segundos;')
 
-    arq.write(f'\n  gastou-se {sum(temposGastos):.5f} segundos no total;')
-    arq.write(f'\n  gastou-se {np.mean(temposGastos):.5f} segundos em média;')
+    printadorArquivasso(f'\n  gastou-se {sum(temposGastos):.5f} segundos no total;')
+    printadorArquivasso(f'\n  gastou-se {np.mean(temposGastos):.5f} segundos em média;')
     return
 
 
 if __name__ == '__main__':
-    arq = open("out.txt", "a")
     tempoinicialprograma = time.time()
 
     for escolhatam in range(5):
-        arq.write("\n\n")
+        printadorArquivasso("\n\n")
         match escolhatam:
             case 0:
                 tam = 50000
-                arq.write(f'\n[[[[[[[[[[[[[[[ 50 mil elementos ]]]]]]]]]]]]]]]')
+                printadorArquivasso(f'\n[[[[[[[[[[[[[[[ 50 mil elementos ]]]]]]]]]]]]]]]')
             case 1:
                 tam = 100000
-                arq.write(f'\n[[[[[[[[[[[[[[[ 100 mil elementos ]]]]]]]]]]]]]]]')
+                printadorArquivasso(f'\n[[[[[[[[[[[[[[[ 100 mil elementos ]]]]]]]]]]]]]]]')
             case 2:
                 tam = 150000
-                arq.write(f'\n[[[[[[[[[[[[[[[ 150 mil elementos ]]]]]]]]]]]]]]]')
+                printadorArquivasso(f'\n[[[[[[[[[[[[[[[ 150 mil elementos ]]]]]]]]]]]]]]]')
             case 3:
                 tam = 200000
-                arq.write(f'\n[[[[[[[[[[[[[[[ 200 mil elementos ]]]]]]]]]]]]]]]')
+                printadorArquivasso(f'\n[[[[[[[[[[[[[[[ 200 mil elementos ]]]]]]]]]]]]]]]')
             case 4:
                 tam = 250000
-                arq.write(f'\n[[[[[[[[[[[[[[[ 250 mil elementos ]]]]]]]]]]]]]]]')
+                printadorArquivasso(f'\n[[[[[[[[[[[[[[[ 250 mil elementos ]]]]]]]]]]]]]]]')
             case 5:
                 tam = 300000
-                arq.write(f'\n[[[[[[[[[[[[[[[ 300 mil elementos ]]]]]]]]]]]]]]]')
+                printadorArquivasso(f'\n[[[[[[[[[[[[[[[ 300 mil elementos ]]]]]]]]]]]]]]]')
 
         #alocacao de ram
         vetor = [0 for _ in range(tam)]
@@ -71,5 +74,5 @@ if __name__ == '__main__':
 
     tempofinalprograma = time.time()
     tempoUtilizadoprograma = tempofinalprograma - tempoinicialprograma
-    arq.write(f'\n####################################################\nTempo gasto total do programa: {tempoUtilizadoprograma:.4f}.\n####################################################')
-    arq.close()
+    printadorArquivasso(f'\n####################################################\nTempo gasto total do programa: {tempoUtilizadoprograma:.4f}.\n####################################################')
+    
