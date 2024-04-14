@@ -2,7 +2,7 @@ import numpy as np # type: ignore
 import time
 
 def printadorArquivasso(texto):
-    with open("out.txt", "a") as arq:
+    with open("out_at1.txt", "a") as arq:
         arq.write(texto)
 
 def ordena(vetor, tam, escolhateste):
@@ -43,9 +43,7 @@ def ordena(vetor, tam, escolhateste):
 if __name__ == '__main__':
     tempoinicialprograma = time.time()
 
-    for escolhatam in range(
-        5, #<= for testing 6
-        6):
+    for escolhatam in range(6):
         printadorArquivasso("\n\n")
         match escolhatam:
             case 0:
