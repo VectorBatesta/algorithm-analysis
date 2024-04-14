@@ -1,0 +1,214 @@
+
+
+
+[[[[[[[[[[[[[[[ 5000 mil elementos ]]]]]]]]]]]]]]]
+Melhor caso: 
+ iteração 0 terminada, gasto: 0.00342 segundos;
+ iteração 1 terminada, gasto: 0.00328 segundos;
+ iteração 2 terminada, gasto: 0.00345 segundos;
+ iteração 3 terminada, gasto: 0.00339 segundos;
+ iteração 4 terminada, gasto: 0.00376 segundos;
+ iteração 5 terminada, gasto: 0.00332 segundos;
+ iteração 6 terminada, gasto: 0.00340 segundos;
+ iteração 7 terminada, gasto: 0.00324 segundos;
+ iteração 8 terminada, gasto: 0.00389 segundos;
+ iteração 9 terminada, gasto: 0.00333 segundos;
+  gastou-se 0.03447 segundos no total;
+  gastou-se 0.00345 segundos em média;
+Caso médio: 
+ iteração 0 terminada, gasto: 5.08651 segundos;
+ iteração 1 terminada, gasto: 4.81724 segundos;
+ iteração 2 terminada, gasto: 4.75174 segundos;
+ iteração 3 terminada, gasto: 4.82944 segundos;
+ iteração 4 terminada, gasto: 4.76803 segundos;
+ iteração 5 terminada, gasto: 4.76820 segundos;
+ iteração 6 terminada, gasto: 4.79688 segundos;
+ iteração 7 terminada, gasto: 4.74181 segundos;
+ iteração 8 terminada, gasto: 5.61785 segundos;
+ iteração 9 terminada, gasto: 5.33864 segundos;
+  gastou-se 49.51634 segundos no total;
+  gastou-se 4.95163 segundos em média;
+Pior caso: 
+ iteração 0 terminada, gasto: 7.51895 segundos;
+ iteração 1 terminada, gasto: 7.25042 segundos;
+ iteração 2 terminada, gasto: 6.76799 segundos;
+ iteração 3 terminada, gasto: 6.92929 segundos;
+ iteração 4 terminada, gasto: 7.02153 segundos;
+ iteração 5 terminada, gasto: 6.92985 segundos;
+ iteração 6 terminada, gasto: 6.83757 segundos;
+ iteração 7 terminada, gasto: 7.08432 segundos;
+ iteração 8 terminada, gasto: 6.76455 segundos;
+ iteração 9 terminada, gasto: 6.49997 segundos;
+  gastou-se 69.60445 segundos no total;
+  gastou-se 6.96044 segundos em média;
+
+
+[[[[[[[[[[[[[[[ 10000 mil elementos ]]]]]]]]]]]]]]]
+Melhor caso: 
+ iteração 0 terminada, gasto: 0.00652 segundos;
+ iteração 1 terminada, gasto: 0.00648 segundos;
+ iteração 2 terminada, gasto: 0.00673 segundos;
+ iteração 3 terminada, gasto: 0.00780 segundos;
+ iteração 4 terminada, gasto: 0.00689 segundos;
+ iteração 5 terminada, gasto: 0.00677 segundos;
+ iteração 6 terminada, gasto: 0.00685 segundos;
+ iteração 7 terminada, gasto: 0.00671 segundos;
+ iteração 8 terminada, gasto: 0.00666 segundos;
+ iteração 9 terminada, gasto: 0.00695 segundos;
+  gastou-se 0.06836 segundos no total;
+  gastou-se 0.00684 segundos em média;
+Caso médio: 
+ iteração 0 terminada, gasto: 18.21008 segundos;
+ iteração 1 terminada, gasto: 18.61332 segundos;
+ iteração 2 terminada, gasto: 18.18810 segundos;
+ iteração 3 terminada, gasto: 18.74777 segundos;
+ iteração 4 terminada, gasto: 18.27287 segundos;
+ iteração 5 terminada, gasto: 18.46030 segundos;
+ iteração 6 terminada, gasto: 18.42335 segundos;
+ iteração 7 terminada, gasto: 18.24676 segundos;
+ iteração 8 terminada, gasto: 18.18349 segundos;
+ iteração 9 terminada, gasto: 18.38965 segundos;
+  gastou-se 183.73570 segundos no total;
+  gastou-se 18.37357 segundos em média;
+Pior caso: 
+ iteração 0 terminada, gasto: 25.87827 segundos;
+ iteração 1 terminada, gasto: 26.01593 segundos;
+ iteração 2 terminada, gasto: 25.65821 segundos;
+ iteração 3 terminada, gasto: 25.53287 segundos;
+ iteração 4 terminada, gasto: 26.01702 segundos;
+ iteração 5 terminada, gasto: 25.87274 segundos;
+ iteração 6 terminada, gasto: 25.84036 segundos;
+ iteração 7 terminada, gasto: 25.55002 segundos;
+ iteração 8 terminada, gasto: 25.52470 segundos;
+ iteração 9 terminada, gasto: 26.19813 segundos;
+  gastou-se 258.08825 segundos no total;
+  gastou-se 25.80883 segundos em média;
+
+
+[[[[[[[[[[[[[[[ 15000 mil elementos ]]]]]]]]]]]]]]]
+Melhor caso: 
+ iteração 0 terminada, gasto: 0.01001 segundos;
+ iteração 1 terminada, gasto: 0.00974 segundos;
+ iteração 2 terminada, gasto: 0.00999 segundos;
+ iteração 3 terminada, gasto: 0.00993 segundos;
+ iteração 4 terminada, gasto: 0.00984 segundos;
+ iteração 5 terminada, gasto: 0.01001 segundos;
+ iteração 6 terminada, gasto: 0.00986 segundos;
+ iteração 7 terminada, gasto: 0.01046 segundos;
+ iteração 8 terminada, gasto: 0.01303 segundos;
+ iteração 9 terminada, gasto: 0.01004 segundos;
+  gastou-se 0.10292 segundos no total;
+  gastou-se 0.01029 segundos em média;
+Caso médio: 
+ iteração 0 terminada, gasto: 41.22896 segundos;
+ iteração 1 terminada, gasto: 41.05417 segundos;
+ iteração 2 terminada, gasto: 41.39420 segundos;
+ iteração 3 terminada, gasto: 41.36459 segundos;
+ iteração 4 terminada, gasto: 40.93900 segundos;
+ iteração 5 terminada, gasto: 41.45938 segundos;
+ iteração 6 terminada, gasto: 41.22514 segundos;
+ iteração 7 terminada, gasto: 40.96050 segundos;
+ iteração 8 terminada, gasto: 41.77020 segundos;
+ iteração 9 terminada, gasto: 41.18541 segundos;
+  gastou-se 412.58155 segundos no total;
+  gastou-se 41.25816 segundos em média;
+Pior caso: 
+ iteração 0 terminada, gasto: 58.15454 segundos;
+ iteração 1 terminada, gasto: 58.46111 segundos;
+ iteração 2 terminada, gasto: 58.04239 segundos;
+ iteração 3 terminada, gasto: 58.11033 segundos;
+ iteração 4 terminada, gasto: 58.04036 segundos;
+ iteração 5 terminada, gasto: 58.10986 segundos;
+ iteração 6 terminada, gasto: 57.79713 segundos;
+ iteração 7 terminada, gasto: 58.31057 segundos;
+ iteração 8 terminada, gasto: 57.59332 segundos;
+ iteração 9 terminada, gasto: 58.52126 segundos;
+  gastou-se 581.14088 segundos no total;
+  gastou-se 58.11409 segundos em média;
+
+
+[[[[[[[[[[[[[[[ 20000 mil elementos ]]]]]]]]]]]]]]]
+Melhor caso: 
+ iteração 0 terminada, gasto: 0.01328 segundos;
+ iteração 1 terminada, gasto: 0.01318 segundos;
+ iteração 2 terminada, gasto: 0.01348 segundos;
+ iteração 3 terminada, gasto: 0.01319 segundos;
+ iteração 4 terminada, gasto: 0.01326 segundos;
+ iteração 5 terminada, gasto: 0.01403 segundos;
+ iteração 6 terminada, gasto: 0.01405 segundos;
+ iteração 7 terminada, gasto: 0.01327 segundos;
+ iteração 8 terminada, gasto: 0.01349 segundos;
+ iteração 9 terminada, gasto: 0.01332 segundos;
+  gastou-se 0.13455 segundos no total;
+  gastou-se 0.01345 segundos em média;
+Caso médio: 
+ iteração 0 terminada, gasto: 73.62292 segundos;
+ iteração 1 terminada, gasto: 74.20159 segundos;
+ iteração 2 terminada, gasto: 74.16721 segundos;
+ iteração 3 terminada, gasto: 73.88932 segundos;
+ iteração 4 terminada, gasto: 74.27560 segundos;
+ iteração 5 terminada, gasto: 74.07539 segundos;
+ iteração 6 terminada, gasto: 74.78469 segundos;
+ iteração 7 terminada, gasto: 75.23849 segundos;
+ iteração 8 terminada, gasto: 73.53806 segundos;
+ iteração 9 terminada, gasto: 74.12160 segundos;
+  gastou-se 741.91487 segundos no total;
+  gastou-se 74.19149 segundos em média;
+Pior caso: 
+ iteração 0 terminada, gasto: 103.52524 segundos;
+ iteração 1 terminada, gasto: 103.32109 segundos;
+ iteração 2 terminada, gasto: 103.59870 segundos;
+ iteração 3 terminada, gasto: 102.98217 segundos;
+ iteração 4 terminada, gasto: 103.08009 segundos;
+ iteração 5 terminada, gasto: 104.02553 segundos;
+ iteração 6 terminada, gasto: 103.36002 segundos;
+ iteração 7 terminada, gasto: 103.41273 segundos;
+ iteração 8 terminada, gasto: 103.53316 segundos;
+ iteração 9 terminada, gasto: 103.52827 segundos;
+  gastou-se 1034.36700 segundos no total;
+  gastou-se 103.43670 segundos em média;
+
+
+[[[[[[[[[[[[[[[ 25000 mil elementos ]]]]]]]]]]]]]]]
+Melhor caso: 
+ iteração 0 terminada, gasto: 0.01639 segundos;
+ iteração 1 terminada, gasto: 0.01643 segundos;
+ iteração 2 terminada, gasto: 0.01675 segundos;
+ iteração 3 terminada, gasto: 0.01642 segundos;
+ iteração 4 terminada, gasto: 0.01778 segundos;
+ iteração 5 terminada, gasto: 0.01709 segundos;
+ iteração 6 terminada, gasto: 0.01721 segundos;
+ iteração 7 terminada, gasto: 0.01695 segundos;
+ iteração 8 terminada, gasto: 0.01663 segundos;
+ iteração 9 terminada, gasto: 0.01670 segundos;
+  gastou-se 0.16835 segundos no total;
+  gastou-se 0.01684 segundos em média;
+Caso médio: 
+ iteração 0 terminada, gasto: 116.19580 segundos;
+ iteração 1 terminada, gasto: 115.87373 segundos;
+ iteração 2 terminada, gasto: 116.32839 segundos;
+ iteração 3 terminada, gasto: 116.41437 segundos;
+ iteração 4 terminada, gasto: 115.90769 segundos;
+ iteração 5 terminada, gasto: 115.97113 segundos;
+ iteração 6 terminada, gasto: 116.33265 segundos;
+ iteração 7 terminada, gasto: 115.81872 segundos;
+ iteração 8 terminada, gasto: 116.43178 segundos;
+ iteração 9 terminada, gasto: 115.53648 segundos;
+  gastou-se 1160.81074 segundos no total;
+  gastou-se 116.08107 segundos em média;
+Pior caso: 
+ iteração 0 terminada, gasto: 161.69587 segundos;
+ iteração 1 terminada, gasto: 161.75187 segundos;
+ iteração 2 terminada, gasto: 167.00825 segundos;
+ iteração 3 terminada, gasto: 174.12107 segundos;
+ iteração 4 terminada, gasto: 167.94318 segundos;
+ iteração 5 terminada, gasto: 170.04388 segundos;
+ iteração 6 terminada, gasto: 181.56218 segundos;
+ iteração 7 terminada, gasto: 170.71420 segundos;
+ iteração 8 terminada, gasto: 173.46923 segundos;
+ iteração 9 terminada, gasto: 168.23667 segundos;
+  gastou-se 1696.54642 segundos no total;
+  gastou-se 169.65464 segundos em média;
+####################################################
+Tempo gasto total do programa: 6188.8898.
+####################################################
