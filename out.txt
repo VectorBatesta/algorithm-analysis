@@ -209,6 +209,48 @@ Pior caso:
  iteração 9 terminada, gasto: 168.23667 segundos;
   gastou-se 1696.54642 segundos no total;
   gastou-se 169.65464 segundos em média;
+
+
+[[[[[[[[[[[[[[[ 30000 mil elementos ]]]]]]]]]]]]]]]
+Melhor caso: 
+ iteração 0 terminada, gasto: 0.02393 segundos;
+ iteração 1 terminada, gasto: 0.01985 segundos;
+ iteração 2 terminada, gasto: 0.02001 segundos;
+ iteração 3 terminada, gasto: 0.02107 segundos;
+ iteração 4 terminada, gasto: 0.02095 segundos;
+ iteração 5 terminada, gasto: 0.01937 segundos;
+ iteração 6 terminada, gasto: 0.03407 segundos;
+ iteração 7 terminada, gasto: 0.04026 segundos;
+ iteração 8 terminada, gasto: 0.02103 segundos;
+ iteração 9 terminada, gasto: 0.02519 segundos;
+  gastou-se 0.24572 segundos no total;
+  gastou-se 0.02457 segundos em média;
+Caso médio: 
+ iteração 0 terminada, gasto: 155.86992 segundos;
+ iteração 1 terminada, gasto: 155.77799 segundos;
+ iteração 2 terminada, gasto: 155.60428 segundos;
+ iteração 3 terminada, gasto: 155.24145 segundos;
+ iteração 4 terminada, gasto: 154.78799 segundos;
+ iteração 5 terminada, gasto: 155.19187 segundos;
+ iteração 6 terminada, gasto: 155.46241 segundos;
+ iteração 7 terminada, gasto: 155.13787 segundos;
+ iteração 8 terminada, gasto: 155.48802 segundos;
+ iteração 9 terminada, gasto: 155.14074 segundos;
+  gastou-se 1553.70253 segundos no total;
+  gastou-se 155.37025 segundos em média;
+Pior caso: 
+ iteração 0 terminada, gasto: 226.68300 segundos;
+ iteração 1 terminada, gasto: 226.26465 segundos;
+ iteração 2 terminada, gasto: 226.55846 segundos;
+ iteração 3 terminada, gasto: 225.84220 segundos;
+ iteração 4 terminada, gasto: 226.63502 segundos;
+ iteração 5 terminada, gasto: 226.87504 segundos;
+ iteração 6 terminada, gasto: 226.85598 segundos;
+ iteração 7 terminada, gasto: 226.89979 segundos;
+ iteração 8 terminada, gasto: 226.77089 segundos;
+ iteração 9 terminada, gasto: 226.58632 segundos;
+  gastou-se 2265.97134 segundos no total;
+  gastou-se 226.59713 segundos em média;
 ####################################################
-Tempo gasto total do programa: 6188.8898.
+Tempo gasto total do programa: 10008.8374.
 ####################################################

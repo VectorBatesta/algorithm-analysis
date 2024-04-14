@@ -44,7 +44,7 @@ if __name__ == '__main__':
     tempoinicialprograma = time.time()
 
     for escolhatam in range(
-        #6, <= for testing 6
+        5, #<= for testing 6
         6):
         printadorArquivasso("\n\n")
         match escolhatam:
