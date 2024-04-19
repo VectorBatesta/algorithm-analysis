@@ -5,17 +5,8 @@ def printadorArquivasso(texto):
     with open("out_at2.txt", "a") as arq:
         arq.write(texto)
 
-def ordena(vetor, tam, escolhateste):
-    for iteracao in range(10):
-        vetor_temp = vetor.copy()
+def mergesorto(vetor, inicio, fim):
 
-        begin = time.time()
-        ####
-        
-        ####
-        end = time.time()
-        temposGastos[iteracao] = end - begin
-        printadorArquivasso(f'\n iteração {iteracao} terminada, gasto: {temposGastos[iteracao]:.5f} segundos;')
     return
 
 
@@ -60,9 +51,22 @@ if __name__ == '__main__':
                 case 2: #Pior caso: vetor já ordenado em ordem decrescente;
                     printadorArquivasso(f'\nPior caso: ')
                     vetor = [i for i in reversed(range(tam))]
+            
             temposGastos = [0 for _ in range(10)]
             #
-            [funcoes aqui]
+            for iteracao in range(10):
+                inicio = 0
+                fim = tam
+                vetor_temp = vetor.copy()
+
+                #####
+                begin = time.time()
+                mergesorto(vetor_temp, inicio, fim)
+                end = time.time()
+                #####
+
+                temposGastos[iteracao] = end - begin
+                printadorArquivasso(f'\n iteração {iteracao} terminada, gasto: {temposGastos[iteracao]:.5f} segundos;')
             #
             printadorArquivasso(f'\n  gastou-se {sum(temposGastos):.5f} segundos no total;')
             printadorArquivasso(f'\n  gastou-se {np.mean(temposGastos):.5f} segundos em média;')
