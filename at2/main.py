@@ -4,10 +4,11 @@ import time
 def printadorArquivasso(texto):
     with open("out_at2.txt", "a") as arq:
         arq.write(texto)
+        print(texto)
 
 def mergesorto(vetor, inicio, fim):
     if inicio < fim:
-        meio = [(inicio + fim)/ 2]
+        meio = ((inicio + fim)/ 2)
         mergesorto(vetor, inicio, meio)
         mergesorto(vetor, meio, fim)
         mergium(vetor, inicio, meio, fim)
