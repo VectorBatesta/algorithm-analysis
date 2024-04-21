@@ -6,8 +6,8 @@ sys.setrecursionlimit(99999999)
 
 def printadorArquivasso(texto):
     with open("out_at2.txt", "a") as arq:
-        #arq.write(texto)
-        print(texto)
+        arq.write(texto)
+        print(texto, end='')
 
 def mergesorto(vetor, inicio, fim):
     if inicio < fim:
@@ -120,6 +120,6 @@ if __name__ == '__main__':
     #desnecessario
     tempofinalprograma = time.time()
     tempoUtilizadoprograma = tempofinalprograma - tempoinicialprograma
-    printadorArquivasso(f'\n####################################################\nTempo gasto total do programa: {tempoUtilizadoprograma:.4f}.\n####################################################')
+    printadorArquivasso(f'\n####################################################\nTempo gasto total do programa: {tempoUtilizadoprograma:.4f}.\n####################################################\n')
     #
     
