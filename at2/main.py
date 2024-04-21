@@ -2,7 +2,7 @@ import numpy as np # type: ignore
 import time
 import sys
 
-#sys.setrecursionlimit(99999999)
+sys.setrecursionlimit(99999999)
 
 def printadorArquivasso(texto):
     with open("out_at2.txt", "a") as arq:
@@ -11,9 +11,9 @@ def printadorArquivasso(texto):
 
 def mergesorto(vetor, inicio, fim):
     if inicio < fim:
-        meio = np.floor((inicio + fim)/2)
+        meio = int(np.floor((inicio + fim) / 2))
         mergesorto(vetor, inicio, meio)
-        mergesorto(vetor, meio, fim)
+        mergesorto(vetor, meio + 1, fim)
         mergium(vetor, inicio, meio, fim)
     return
 
@@ -25,16 +25,16 @@ def mergium(vetor, inicio, meio, fim):
     vetoraux2 = [0 for _ in range(n2)]
     
     for i in range(n1):
-        vetoraux1[i] = vetor[inicio + i - 1]
+        vetoraux1[i] = vetor[inicio + i]
     
     for j in range(n2):
-        vetoraux2[j] = vetor[meio + j]
+        vetoraux2[j] = vetor[meio + 1 + j]
 
-    j = i = 0
+    i = j = 0
     k = inicio
 
     while i < n1 and j < n2:
-        if vetoraux1[i] <= vetoraux2[i]:
+        if vetoraux1[i] <= vetoraux2[j]:
             vetor[k] = vetoraux1[i]
             i += 1
         else:
@@ -100,7 +100,7 @@ if __name__ == '__main__':
             #
             for iteracao in range(10):
                 inicio = 0
-                fim = tam
+                fim = tam - 1
                 vetor_temp = vetor.copy()
 
                 #####
