@@ -1,14 +1,17 @@
 import numpy as np # type: ignore
 import time
+import sys
+
+#sys.setrecursionlimit(99999999)
 
 def printadorArquivasso(texto):
     with open("out_at2.txt", "a") as arq:
-        arq.write(texto)
+        #arq.write(texto)
         print(texto)
 
 def mergesorto(vetor, inicio, fim):
     if inicio < fim:
-        meio = ((inicio + fim)/ 2)
+        meio = np.floor((inicio + fim)/2)
         mergesorto(vetor, inicio, meio)
         mergesorto(vetor, meio, fim)
         mergium(vetor, inicio, meio, fim)
@@ -17,38 +20,36 @@ def mergesorto(vetor, inicio, fim):
 def mergium(vetor, inicio, meio, fim):
     n1 = meio - inicio + 1
     n2 = fim - meio
-    vetoraux1 = [0 for _ in range(1, n1)]
-    vetoraux2 = [0 for _ in range(1, n2)]
+
+    vetoraux1 = [0 for _ in range(n1)]
+    vetoraux2 = [0 for _ in range(n2)]
     
-    for i in range(1, n1):
+    for i in range(n1):
         vetoraux1[i] = vetor[inicio + i - 1]
-        i =+ 1
-    i = 1
     
-    for j in range(1, n2):
+    for j in range(n2):
         vetoraux2[j] = vetor[meio + j]
-        j =+ 1
-    j = 1
 
-    indiceinicio = inicio
+    j = i = 0
+    k = inicio
 
-    while i <= n1 and j <= n2:
+    while i < n1 and j < n2:
         if vetoraux1[i] <= vetoraux2[i]:
-            vetor[indiceinicio] = vetoraux1[i]
-            i =+ 1
+            vetor[k] = vetoraux1[i]
+            i += 1
         else:
-            vetor[indiceinicio] = vetoraux2[j]
-            j =+ 1
-        indiceinicio =+ 1
+            vetor[k] = vetoraux2[j]
+            j += 1
+        k += 1
 
-    while i <= n1:
-        vetor[indiceinicio] = vetoraux1[i]
-        i =+ 1
-        indiceinicio =+ 1
-    while j <= n2:
-        vetor[indiceinicio] = vetoraux2[j]
-        j =+ 1
-        indiceinicio =+ 1
+    while i < n1:
+        vetor[k] = vetoraux1[i]
+        i += 1
+        k += 1
+    while j < n2:
+        vetor[k] = vetoraux2[j]
+        j += 1
+        k += 1
         
     return
 
