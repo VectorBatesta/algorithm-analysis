@@ -1,6 +1,7 @@
 import numpy as np # type: ignore
 import time
 import sys
+import random
 
 sys.setrecursionlimit(99999999)
 
@@ -91,7 +92,8 @@ if __name__ == '__main__':
                     vetor = [i for i in range(tam)]
                 case 1: #Caso médio: vetor aleatório;
                     printadorArquivasso(f'\nCaso médio: ')
-                    vetor = np.random.randint(0, tam, tam)
+                    vetor = [i for i in range(tam)]
+                    random.shuffle(vetor)
                 case 2: #Pior caso: vetor já ordenado em ordem decrescente;
                     printadorArquivasso(f'\nPior caso: ')
                     vetor = [i for i in reversed(range(tam))]
@@ -108,6 +110,9 @@ if __name__ == '__main__':
                 mergesorto(vetor_temp, inicio, fim)
                 end = time.time()
                 #####
+
+                #for i in range(tam):
+                #   print(f'{vetor_temp[i]} ', end='')
 
                 temposGastos[iteracao] = end - begin
                 printadorArquivasso(f'\n iteração {iteracao} terminada, gasto: {temposGastos[iteracao]:.5f} segundos;')
