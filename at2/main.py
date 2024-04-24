@@ -77,7 +77,7 @@ if __name__ == '__main__':
                 tam = 300000
         
         #if processador.qualidade = ruim:
-        tam = int(tam / 10)
+        #tam = int(tam / 5)
         #comentar /\ caso pc for bom
 
         printadorArquivasso(f'\n[[[[[[[[[[[[[[[ {tam} mil elementos ]]]]]]]]]]]]]]]')
